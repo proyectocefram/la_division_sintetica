@@ -1,0 +1,308 @@
+<html lang="es">
+<head>
+<title>&iquest;Qu&eacute; es?</title>
+<link rel="icon" href="logopestaña.ico">
+<style>
+	body {
+		margin:58.4px 0px 0px 0px;
+		font-family:"Arial", sans-serif;
+		font-style:normal;
+		background-image:url(v915-wit-011-k.jpeg);/* Imagen de fondo */
+    background-attachment: fixed;/*hace que el fondo se quede fijo mientras el contenido se desplaza.*/
+    background-size: cover;/*ajusta la imagen para que cubra todo el fondo, adaptándose al tamaño de la pantalla.*/
+}
+/* Estilos para la barra superior */
+div.fond {
+        background-color:#0F2027;/* Color de fondo de barra */
+        width:100%;
+        height:57.5px;
+        color:white;
+        position: fixed;
+        top: 0;/* Posiciona la barra en la parte superior */
+        z-index: 10; /* Posiciona el fondo por encima de todo */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+		ul.navb {
+			list-style-type:none;
+         margin: 0;
+         padding: 0;
+}
+/* Estilos para el logo de la barra*/
+		img.logoc {
+        transition: transform 0.2s;
+        margin:6.8px 150px 0px 40px;
+        float:right;
+        z-index: 12;
+}
+			img.logoc:hover {
+				transition: 0.2s;
+				transform:scale(1.125);
+}
+/* Estilos para boton de index */
+			a.first {
+				border:2px solid white;
+				border-radius:26px;
+				padding:7px 20px;
+				float:left;
+				margin:8.5px 85px 0px 123px;
+				display:inline;
+				transition: 0.2s;
+				font-size:18px;
+				letter-spacing:1;
+				font-family:"montserrat", sans-serif;
+}
+/* Animacion para boton index */
+			a.first:hover {
+				transform:scale(1.070);
+				color:#5D8FD0;
+}
+/* Estilos para botones centrales */
+			li.button {
+				display:inline-block;
+				margin:17.5px 44px 0px 44px;
+				transition: 0.2s;
+				font-size:18px;
+				letter-spacing:1px;
+				font-family:"montserrat", sans-serif;
+}
+/* Animacion para botones centrales */
+			li.button:hover {
+				transform:scale(1.070);
+				color:#5D8FD0;
+}
+/* Quita decoracion de enlace a algunos botones */
+			a.nodec {
+				text-decoration:none;
+				color:white;
+				transition: 0.2s;
+}
+/* Animacion para botones sin decoracion */
+			a.nodec:hover {
+				transform:scale(1.070);
+				color:#5D8FD0;
+}
+			h1.encab {
+				background-color:#1FA39E;
+				margin:0px 0px 45px 0px;
+				font-size:30px;
+				width:100%;
+				height:40px;
+				padding-top:5px;
+				font-weight:bold;
+}
+/* Estilo para menus desplegables */
+
+  .despleg {
+    display: inline-block;
+    z-index: 10;
+}
+/* Estilos del primer contenedor */
+  .despleg-cont {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 175px;
+    margin:0px 0px 0px 10px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont {
+    display: block;
+}
+/* Estilos del segundo contenedor */
+  .despleg-cont2 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 210px;
+    margin:0px 0px 0px 22px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont2 {
+    display: block;
+}
+/* Estilos del tercer contenedor */
+  .despleg-cont3 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 200px;
+    margin:0px 0px 0px 21px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont3 {
+    display: block;
+}
+/* Estilos para enlaces del menu */
+  a.menu {
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    line-height:1.75;
+    font-family:"montserrat", sans-serif;
+}
+/* Cambio de color para enlaces de menu */
+  a.menu:hover {
+    color:#5D8FD0;
+}
+	p.parr1 {
+		margin:0px 0px;
+		font-size:18px;
+		text-align:justify;
+		font-family:"times new roman", sans-serif;
+}
+	p.parr2 {
+		margin:0px 0px;
+		font-size:18px;
+		text-align:justify;
+		font-family:"times new roman", sans-serif;
+}
+	p.parr3 {
+		margin:0px 0px;
+		font-size:18px;
+		text-align:justify;
+		font-family:"times new roman", sans-serif;
+}
+	h2.encabeza2 {
+		margin:0px 0px 15px 0px;
+		text-align:center;
+		font-family:"times new roman", sans-serif;
+}
+	ul.inf {
+		margin:0px 0px;
+		font-size:18px;
+		font-family:"times new roman", sans-serif;
+}
+	br {
+		line-height:3;
+}
+	div.continf {
+		background-color:#76B8E3;
+		border:4px solid #195C80;
+		margin:auto;
+		width:900px;
+		border-radius:20px;
+		padding:20px 25px;
+		box-shadow:0px 1px 9px 4px black;
+	}
+	div.continf:hover {
+		transition: 0.5s;
+		transform: scale(1.025);
+}
+  .pp {
+      background: #031926;
+      color:white;
+      padding:12px;
+      border-radius:8px;
+      margin-top:70px;
+      font-family:"montserrat", sans-serif;
+}
+    .presentacion {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      height: 40px;
+      margin: 30px 50px 30px 50px;
+      text-align: left;
+}
+    .presentacion h3 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion h2 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion b {
+      color: #333;
+}
+    a.downb:link, a.downb:visited { 
+      background-color: #468189; 
+      color: white; 
+      padding: 14px 25px; 
+      text-align: center; 
+      text-decoration: none; 
+      display: inline-block;
+} 
+    a.downb:hover, a.downb:active { 
+      background-color: #031926; 
+}
+</style>
+</head>
+<body>
+<a name="ARRIBA">
+<div class="fond">
+	<ul class="navb">
+		<li><a class="nodec first" href="index.html">Principal</a></li>
+<div class="despleg">
+		<li class="button"><a class="nodec" href="">Conceptos</a></li>
+	<div class="despleg-cont">
+		<p><a class="menu" href="pag1.html">&iquest;Qu&eacute; es?</a></p>
+		<p><a class="menu" href="pag2.html">&iquest;Para qu&eacute; se usa?</a></p>
+		<p><a class="menu" href="pag3.html">Requisitos</a></p>
+		<p><a class="menu" href="pag4.html">Pasos B&aacute;sicos</a></p>
+	</div>
+</div>
+<div class="despleg">
+		<li class="button"><a class="nodec" href="">Casos Especiales</a></li>
+	<div class="despleg-cont2">
+		<p><a class="menu" href="pag1A.html">&iquest;Qu&eacute; hacer si el divisor es negativo?</a></p>
+		<p><a class="menu" href="pag2A.html">Problemas frecuentes</a></p>
+		<p><a class="menu" href="pag3A.html">Ejemplo simple</a></p>
+		<p><a class="menu" href="pag4A.html">Explicaci&oacute;n del residuo y cociente</a></p>
+	</div>
+</div>
+<div class="despleg">
+		<li class="button"><a class="nodec" href="">Pr&aacute;ctica y Cierre</a></li>
+  <div class="despleg-cont3">
+     <p><a class="menu" href="pag1C.html">Ejemplo de divisi&oacute;n sint&eacute;tica</a></p>
+     <p><a class="menu" href="pag2C.html">Ejemplo con t&eacute;rmino faltante</a></p>
+     <p><a class="menu" href="pag3C.html">Divisi&oacute;n sint&eacute;tica con divisor x+3</a></p>
+     <p><a class="menu" href="pag4C.html">Divisi&oacute;n sint&eacute;tica para encontrar ra&iacute;ces</a></p>
+     <p><a class="menu" href="formulario.html">Formulario</a></p>
+  </div>
+</div>
+		<img class="logoc" src="image.png" width="45px"></li>
+	</ul>
+</div>
+<center><h1 class="encab">&iquest;Qu&eacute; es la divisi&oacute;n sint&eacute;tica?</marquee></center>
+<div class="continf"><h2 class="encabeza2">Introducci&oacute;n</h2>
+    <p class="parr1">La divisi&oacute;n sint&eacute;tica es un m&eacute;todo r&aacute;pido para dividir polinomios entre binomios de la forma x−a. Simplifica el proceso al usar solo los coeficientes del polinomio en una tabla y aplicar operaciones b&aacute;sicas de multiplicaci&oacute;n y suma, evitando trabajar con t&eacute;rminos literales.</p></div><br>
+<div class="continf"><h2 class="encabeza2">Caracter&iacute;sticas distintivas:</h4>
+<ul class="inf">
+    <li>Eficiencia computacional: Reduce dr&aacute;sticamente el n&uacute;mero de operaciones, convirtiendo un proceso de O(n<sup>2</sup>) a O(n).</li><br style="line-height:0.3;">
+    <li>Minimalismo estructural: Utiliza solo coeficientes num&eacute;ricos, prescindiendo de t&eacute;rminos algebraicos completos.</li><br style="line-height:0.3;">
+    <li>Condici&oacute;n restrictiva: Exige que el divisor sea estrictamente x−a (o x+a, equivalente a x−(−a)).</li><br style="line-height:0.3;">
+    <li>Fundamento hist&oacute;rico: Tambi&eacute;n conocido como m&eacute;todo de Ruffini, en honor al matem&aacute;tico italiano Paolo Ruffini (1765-1822), quien sistematiz&oacute; este procedimiento.</li>
+</ul></div><br>
+<div class="continf"><h2 class="encabeza2">Ejemplo introductorio</h3>
+<p class="parr2">Consideremos la divisi&oacute;n de P(x)=x <sup>3</sup> +3x <sup>2</sup> − 5x −4 entre D(x)=x+2. En lugar de desplegar la divisi&oacute;n larga (que requiere escribir t&eacute;rminos completos, restar parciales y alinear grados), la divisi&oacute;n sint&eacute;tica extrae los coeficientes: 1 (x <sup>3</sup> ), 3 (x <sup>2</sup> ), -5 (x), -4 (constante). Estos valores se organizan en una tabla junto con a=−2 (ya que x+2=x−(−2)). El m&eacute;todo ejecuta un ciclo sistem&aacute;tico:</p><br style="line-height:0.4;">
+<ul class="inf" style="list-style-type:decimal;margin-top:15px;">
+        <li>Bajar el primer coeficiente (1).</li>
+        <li>Multiplicar por a (1×−2=−2).</li>
+        <li>Sumar al siguiente coeficiente (3+(−2)=1).</li>
+        <li>Repetir hasta obtener el residuo.<br style="line-height:0.2;">
+Este flujo num&eacute;rico genera el cociente x<sup>2</sup> +x−7 y el residuo 10 en cuatro pasos, mientras la divisi&oacute;n larga requerir&iacute;a al menos ocho operaciones algebraicas.</li>
+</div><br>
+    <div class="continf" style="margin-bottom:45px;"><h2 class="encabeza2">Analog&iacute;a</h3>
+    <p class="parr3">Si la divisi&oacute;n larga es como construir un rascacielos ladrillo por ladrillo (proceso meticuloso pero lento), la divisi&oacute;n sint&eacute;tica es como usar una gr&uacute;a modular que ensambla secciones prefabricadas (misma estructura, pero 10 veces m&aacute;s r&aacute;pido). Ambos m&eacute;todos construyen el mismo edificio matem&aacute;tico, pero uno est&aacute; dise&ntilde;ado para la era digital.</p></div>
+
+<div class="pp">
+<div class="presentacion">
+<h3><a class="downb" href="#ARRIBA">&nbsp;&nbsp;&nbsp;&nbsp;IR ARRIBA&nbsp;&nbsp;&nbsp;&nbsp;</a></h3>
+</div>
+<div class="presentacion">
+<h2 style="margin-left:56px;margin-top:-25px;">Desarrollado por:</h2>
+<p style="font-size:18px;margin-left:31px;">Luis Fernando Alvarez Corpe&ntilde;o</p>
+</div>
+<b><p style=";margin-bottom:20px;margin-top:-5px;margin-left:555px">&copy; 2025 Proyecto de m&oacute;dulo</b></p>
+</div>
+</body>
+</html>

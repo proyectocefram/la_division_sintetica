@@ -1,0 +1,361 @@
+<html lang="es">
+<head>
+<title>Requisitos</title>
+<link rel="icon" href="logopestaña.ico">
+<style>
+	body {
+		margin:58.4px 0px 0px 0px;
+		font-family:"Arial", sans-serif;
+		font-style:normal;
+		background-image:url(v915-wit-011-k.jpeg);/* Imagen de fondo */
+    background-attachment: fixed;/*hace que el fondo se quede fijo mientras el contenido se desplaza.*/
+    background-size: cover;/*ajusta la imagen para que cubra todo el fondo, adaptándose al tamaño de la pantalla.*/
+}
+/* Estilos para la barra superior */
+div.fond {
+        background-color:#0F2027;/* Color de fondo de barra */
+        width:100%;
+        height:57.5px;
+        color:white;
+        position: fixed;
+        top: 0;/* Posiciona la barra en la parte superior */
+        z-index: 10; /* Posiciona el fondo por encima de todo */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+		ul.navb {
+			list-style-type:none;
+         margin: 0;
+         padding: 0;
+}
+/* Estilos para el logo de la barra*/
+		img.logoc {
+        transition: transform 0.2s;
+        margin:6.8px 150px 0px 40px;
+        float:right;
+        z-index: 12;
+}
+			img.logoc:hover {
+				transition: 0.2s;
+				transform:scale(1.125);
+}
+/* Estilos para boton de index */
+			a.first {
+				border:2px solid white;
+				border-radius:26px;
+				padding:7px 20px;
+				float:left;
+				margin:8.5px 85px 0px 123px;
+				display:inline;
+				transition: 0.2s;
+				font-size:18px;
+				letter-spacing:1;
+				font-family:"montserrat", sans-serif;
+}
+/* Animacion para boton index */
+			a.first:hover {
+				transform:scale(1.070);
+				color:#5D8FD0;
+}
+/* Estilos para botones centrales */
+			li.button {
+				display:inline-block;
+				margin:17.5px 44px 0px 44px;
+				transition: 0.2s;
+				font-size:18px;
+				letter-spacing:1px;
+				font-family:"montserrat", sans-serif;
+}
+/* Animacion para botones centrales */
+			li.button:hover {
+				transform:scale(1.070);
+				color:#5D8FD0;
+}
+/* Quita decoracion de enlace a algunos botones */
+			a.nodec {
+				text-decoration:none;
+				color:white;
+				transition: 0.2s;
+}
+/* Animacion para botones sin decoracion */
+			a.nodec:hover {
+				transform:scale(1.070);
+				color:#5D8FD0;
+}
+			h1.encab {
+				background-color:#1FA39E;
+				margin:0px 0px 45px 0px;
+				font-size:30px;
+				width:100%;
+				height:40px;
+				padding-top:5px;
+				font-weight:bold;
+}
+/* Estilo para menus desplegables */
+
+  .despleg {
+    display: inline-block;
+    z-index: 11;
+}
+/* Estilos del primer contenedor */
+  .despleg-cont {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 175px;
+    margin:0px 0px 0px 10px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont {
+    display: block;
+}
+/* Estilos del segundo contenedor */
+  .despleg-cont2 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 210px;
+    margin:0px 0px 0px 22px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont2 {
+    display: block;
+}
+/* Estilos del tercer contenedor */
+  .despleg-cont3 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 200px;
+    margin:0px 0px 0px 21px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont3 {
+    display: block;
+}
+/* Estilos para enlaces del menu */
+  a.menu {
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    line-height:1.75;
+    font-family:"montserrat", sans-serif;
+}
+/* Cambio de color para enlaces de menu */
+  a.menu:hover {
+    color:#5D8FD0;
+}
+	br {
+		line-height:3;
+}
+	p.parr0 {
+		margin:0px 0px;
+		font-size:18px;
+		text-align:justify;
+		font-family:"times new roman", sans-serif;
+}
+	p.parr1 {
+		margin:0px 0px 0px 0px;
+		font-size:18px;
+		text-align:justify;
+		font-family:"times new roman", sans-serif;
+}
+	h2.encabeza2 {
+		margin:0px 0px 15px 0px;
+		text-align:center;
+		font-family:"times new roman", sans-serif;
+}
+	ul.inf {
+		margin:0px 0px;
+		font-size:18px;
+		font-family:"times new roman", sans-serif;
+}
+	table, td, th {
+		border:2px solid;
+		border-collapse:collapse;
+		width:900px;
+		margin:0px 0px;
+		text-align:center;
+		background-color:#ACD0E8;
+		font-size:18px;
+	}
+	th {
+		font-weight:bold;
+		text-align:center;
+		height:50px;
+		font-size:18px;
+	}
+	td {
+		padding: 6px 0px 6px 0px;
+	}
+	li.buttondown {
+		display:inline-block;
+		margin:17.5px 44px 0px 44px;
+		transition: 0.2s;
+		font-size:18px;
+		letter-spacing:1px;
+		font-family:"montserrat", sans-serif;
+}
+	div.continf {
+		background-color:#76B8E3;
+		border:4px solid #195C80;
+		margin:auto;
+		width:900px;
+		border-radius:20px;
+		padding:20px 25px;
+		box-shadow:0px 1px 9px 4px black;
+	}
+	div.continf:hover {
+		transition: 0.5s;
+		transform: scale(1.025);
+	}
+  .pp {
+      background: #031926;
+      color:white;
+      padding:12px;
+      border-radius:8px;
+      margin-top:70px;
+      font-family:"montserrat", sans-serif;
+}
+    .presentacion {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      height: 40px;
+      margin: 30px 50px 30px 50px;
+      text-align: left;
+}
+    .presentacion h3 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion h2 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion b {
+      color: #333;
+}
+    a.downb:link, a.downb:visited { 
+      background-color: #468189; 
+      color: white; 
+      padding: 14px 25px; 
+      text-align: center; 
+      text-decoration: none; 
+      display: inline-block;
+} 
+    a.downb:hover, a.downb:active { 
+      background-color: #031926; 
+}
+</style>
+</head>
+<body>
+<a name="arriba">	
+<div class="fond">
+	<ul class="navb">
+		<li><a class="nodec first" href="index.html">Principal</a></li>
+<div class="despleg">
+		<li class="button"><a class="nodec" href="">Conceptos</a></li>
+	<div class="despleg-cont">
+		<p><a class="menu" href="pag1.html">&iquest;Qu&eacute; es?</a></p>
+		<p><a class="menu" href="pag2.html">&iquest;Para qu&eacute; se usa?</a></p>
+		<p><a class="menu" href="pag3.html">Requisitos</a></p>
+		<p><a class="menu" href="pag4.html">Pasos B&aacute;sicos</a></p>
+	</div>
+</div>
+<div class="despleg">
+		<li class="button"><a class="nodec" href="">Casos Especiales</a></li>
+	<div class="despleg-cont2">
+		<p><a class="menu" href="pag1A.html">&iquest;Qu&eacute; hacer si el divisor es negativo?</a></p>
+		<p><a class="menu" href="pag2A.html">Problemas frecuentes</a></p>
+		<p><a class="menu" href="pag3A.html">Ejemplo simple</a></p>
+		<p><a class="menu" href="pag4A.html">Explicaci&oacute;n del residuo y cociente</a></p>
+	</div>
+</div>
+<div class="despleg">
+		<li class="button"><a class="nodec" href="">Pr&aacute;ctica y Cierre</a></li>
+  <div class="despleg-cont3">
+     <p><a class="menu" href="pag1C.html">Ejemplo de divisi&oacute;n sint&eacute;tica</a></p>
+     <p><a class="menu" href="pag2C.html">Ejemplo con t&eacute;rmino faltante</a></p>
+     <p><a class="menu" href="pag3C.html">Divisi&oacute;n sint&eacute;tica con divisor x+3</a></p>
+     <p><a class="menu" href="pag4C.html">Divisi&oacute;n sint&eacute;tica para encontrar ra&iacute;ces</a></p>
+     <p><a class="menu" href="formulario.html">Formulario</a></p>
+  </div>
+</div>
+		<img class="logoc" src="image.png" width="45px"></li>
+	</ul>
+</div>
+<center><h1 class="encab">Requisitos para aplicarla</center>
+<div class="continf"><h2 class="encabeza2">Condiciones Imprescindibles</h2>
+<p class="parr0" style="text-align:center">La divisi&oacute;n sint&eacute;tica exige dos condiciones imprescindibles. Su incumplimiento invalida el m&eacute;todo o genera resultados err&oacute;neos.
+</p></div><br>
+<div class="continf"><h2 class="encabeza2">a) El divisor debe ser x−a</h3>
+<ul class="inf">
+    <li style="margin-bottom:7px;"><b>Explicaci&oacute;n detallada:</b></li>
+        <p class="parr0" style="margin-bottom:7px;">El divisor debe ser un binomio lineal con coeficiente 1 en x. Esto garantiza que la estructura multiplicativa del m&eacute;todo se mantenga. Si el coeficiente no es 1 (ej: 3x−2) o el grado es superior (ej: x<sup>2</sup> −4), el algoritmo falla.
+    <li style="margin-top:11px;margin-bottom:5px;">Casos v&aacute;lidos</li>
+        <ul class="inf">
+                        <li style="margin-bottom:5px;">x−5 (a=5).</li>
+                        <li>x+3 (equivalente a x−(−3), con a=−3).</li>
+        </ul>
+</ul>
+<ul class="inf">
+<li style="margin-top:11px; margin-bottom:5px;">Casos inv&aacute;lidos</li>
+        <ul class="inf">
+                        <li style="margin-bottom:5px;">2x−6 (coeficiente de x es 2).</li>
+                        <li>x<sup>2</sup> +1 (grado 2).</li>
+        </ul>
+</ul>
+<ul class="inf">
+<li style="margin-top:11px;margin-bottom:5px;">Consecuencia cr&iacute;tica</li>
+<p class="parr0">Usar un divisor inv&aacute;lido rompe la identidad P(x)=(x−a)⋅Q(x)+R, generando resultados inconsistentes.</p>
+</ul></div><br>
+<div class="continf"><h2 class="encabeza2">b) El polinomio debe estar completo y ordenado</h3>
+<ul class="inf">
+    <li>Explicaci&oacute;n detallada:</li>
+    <p class="parr0" style="margin-bottom:10px;">Los t&eacute;rminos deben estar en orden decreciente de grados (ej: x<sup>3</sup> →x<sup>2</sup> →x→constante). Si falta un t&eacute;rmino intermedio, se debe incluir un coeficiente 0 para mantener la alineaci&oacute;n en la tabla.</p>
+    <li>Ejemplo de correcci&oacute;n:</li>
+    <p class="parr0" style="margin-bottom:10px;">Para P(x)=x 4 −7x+2, se escribe como x<sup>4</sup> +0x<sup>3</sup> +0x<sup>2</sup> −7x+2.</p>
+    <li>Consecuencia cr&iacute;tica:</li>
+    <p class="parr0">Omitir un t&eacute;rmino (ej: no incluir 0x<sup>2</sup>) desplaza todas las columnas subsecuentes, corruptiendo el cociente y el residuo.</p>
+</ul></div><br>
+<div class="continf"><h2 class="encabeza2">Tabla de validaci&oacute;n:</h3>
+<center><table>
+    <tr>
+        <th>Requisito</th>
+        <th>Ejemplo V&aacute;lido</th>
+        <th>Ejemplo Inv&aacute;lido</th>
+    </tr>
+    <tr>
+        <td>Divisor x−a</td>
+        <td>x−5, x+1</td>
+        <td>3x−6, x<sup>2</sup> +4</td>
+    </tr>
+    <tr>
+        <td>Polinomio completo y ordenado</td>
+        <td>2x<sup>3</sup> +0x<sup>2</sup> −x+5</td>
+        <td>	x<sup>3</sup> −2+x (falta x<sup>2</sup>
+ 
+ y no está ordenado)</td>
+    </tr>
+</table></center></div>
+
+<div class="pp">
+<div class="presentacion">
+<h3><a class="downb" href="#ARRIBA">&nbsp;&nbsp;&nbsp;&nbsp;IR ARRIBA&nbsp;&nbsp;&nbsp;&nbsp;</a></h3>
+</div>
+<div class="presentacion">
+<h2 style="margin-left:56px;margin-top:-25px;">Desarrollado por:</h2>
+<p style="font-size:18px;margin-left:31px;">Luis Fernando Alvarez Corpe&ntilde;o</p>
+</div>
+<b><p style=";margin-bottom:20px;margin-top:-5px;margin-left:555px">&copy; 2025 Proyecto de m&oacute;dulo</b></p>
+</div>
+</body>
+</html>

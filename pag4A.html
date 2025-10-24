@@ -1,0 +1,334 @@
+<html lang="es">
+<head>
+<title>Explicaci&oacute;n del residuo y cociente</title>
+<link rel="icon" href="logopestaña.ico">
+<style>
+ 
+  body {
+    margin:58.4px 0px 0px 0px;
+    background-image: url("v915-wit-011-k.jpeg");/* Imagen de fondo */
+    background-attachment: fixed;/*hace que el fondo se quede fijo mientras el contenido se desplaza.*/
+    background-size: cover;/*ajusta la imagen para que cubra todo el fondo, adaptándose al tamaño de la pantalla.*/
+    font-family:"times new roman", sans-serif;
+    font-style:normal;
+}
+/* Estilos para la barra superior */
+div.fond {
+        background-color:#0F2027;/* Color de fondo de barra */
+        width:100%;
+        height:57.5px;
+        color:white;
+        position: fixed;
+        top: 0;/* Posiciona la barra en la parte superior */
+        z-index: 10; /* Posiciona el fondo por encima de todo */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+      ul.navb {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+}
+/* Estilos para el logo de la barra*/
+      img.logoc {
+        transition: transform 0.2s;
+        margin:6.8px 150px 0px 40px;
+        float:right;
+        z-index: 12;
+}
+      img.logoc:hover {
+        transition: 0.2s;
+        transform:scale(1.125);
+}
+/* Estilos para boton de index */
+      a.first {
+        border:2px solid white;
+        border-radius:26px;
+        padding:7px 20px;
+        float:left;
+        margin:8.5px 85px 0px 123px;
+        display:inline;
+        transition: 0.2s;
+        font-size:18px;
+        letter-spacing:1;
+        font-family:"montserrat",sans-serif;
+}
+/* Animacion para boton index */
+      a.first:hover {
+        transform:scale(1.070);
+        color:#5D8FD0;
+}
+/* Estilos para botones centrales */
+      li.button {
+        display:inline-block;
+        margin:17.5px 44px 0px 44px;
+        transition: 0.2s;
+        font-size:18px;
+        letter-spacing:1px;
+        font-family:"montserrat", sans-serif;
+}
+/* Animacion para botones centrales */
+      li.button:hover {
+        transform:scale(1.070);
+        color:#5D8FD0;
+}
+/* Quita decoracion de enlace a algunos botones */
+      a.nodec {
+        text-decoration:none;
+        color:white;
+        transition: 0.2s;
+}
+/* Animacion para botones sin decoracion */
+      a.nodec:hover {
+        transform:scale(1.070);
+        color:#5D8FD0;
+}
+/* Estilo para menus desplegables */
+
+  .despleg {
+    display: inline-block;
+    z-index: 11;
+}
+/* Estilos del primer contenedor */
+  .despleg-cont {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 175px;
+    margin:0px 0px 0px 10px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont {
+    display: block;
+}
+/* Estilos del segundo contenedor */
+  .despleg-cont2 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 210px;
+    margin:0px 0px 0px 22px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont2 {
+    display: block;
+}
+/* Estilos del tercer contenedor */
+  .despleg-cont3 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 200px;
+    margin:0px 0px 0px 21px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont3 {
+    display: block;
+}
+/* Estilos para enlaces del menu */
+  a.menu {
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    line-height:1.75;
+    font-family:"montserrat", sans-serif;
+}
+/* Cambio de color para enlaces de menu */
+  a.menu:hover {
+    color:#5D8FD0;
+}
+    .cc {
+      max-width: 900px;
+      margin: 6rem auto 2rem auto;
+      padding: 1rem;
+      position: relative;
+      z-index: 9;
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-size: 18;
+    }
+    .cc h1 {
+       text-align: center; 
+      background-color: #214554;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .cuadro {
+      background: #CEDEE9;
+      color: ;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 2px solid  #CEDEE9;
+      box-shadow: 3px 3px 10px ;
+  }
+
+    .cuadro h2 {
+      margin-top: 0;
+      color: #1b4f72;
+    }
+    .cuadro h3 {
+      color: #1b4f72;
+    }
+    .ta {
+     margin:0px 145px;
+     text-align:justify;
+     background: #EDF4F8;
+      color: #031926;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+    }
+
+    .ejemplo {
+      background: #8EB4CC;
+      color: #031926;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+}
+
+  .pp {
+      background: #031926;
+      color:white;
+      padding:12px;
+      border-radius:8px;
+      margin-top:30px;
+      font-family:"montserrat", sans-serif;
+}
+    .presentacion {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      height: 40px;
+      margin: 30px 50px 30px 50px;
+      text-align: left;
+}
+    .presentacion h3 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion h2 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion b {
+      color: #333;
+}
+    a.downb:link, a.downb:visited { 
+      background-color: #468189; 
+      color: white; 
+      padding: 14px 25px; 
+      text-align: center; 
+      text-decoration: none; 
+      display: inline-block;
+} 
+    a.downb:hover, a.downb:active { 
+      background-color: #031926; 
+}
+.cuadro:hover {
+      transition: 0.3s; 
+      transform: scale(1.025);
+}
+  </style>
+</head>
+<body>
+<div class="fond">
+  <ul class="navb">
+    <li><a class="nodec first" href="index.html">Principal</a></li>
+<div class="despleg">
+    <li class="button"><a class="nodec" href="">Conceptos</a></li>
+  <div class="despleg-cont">
+    <p><a class="menu" href="pag1.html">&iquest;Qu&eacute; es?</a></p>
+    <p><a class="menu" href="pag2.html">&iquest;Para qu&eacute; se usa?</a></p>
+    <p><a class="menu" href="pag3.html">Requisitos</a></p>
+    <p><a class="menu" href="pag4.html">Pasos B&aacute;sicos</a></p>
+  </div>
+</div>
+<div class="despleg">
+    <li class="button"><a class="nodec" href="">Casos Especiales</a></li>
+  <div class="despleg-cont2">
+    <p><a class="menu" href="pag1A.html">&iquest;Qu&eacute; hacer si el divisor es negativo?</a></p>
+    <p><a class="menu" href="pag2A.html">Problemas frecuentes</a></p>
+    <p><a class="menu" href="pag3A.html">Ejemplo simple</a></p>
+    <p><a class="menu" href="pag4A.html">Explicaci&oacute;n del residuo y cociente</a></p>
+  </div>
+</div>
+<div class="despleg">
+    <li class="button"><a class="nodec" href="">Pr&aacute;ctica y Cierre</a></li>
+  <div class="despleg-cont3">
+     <p><a class="menu" href="pag1C.html">Ejemplo de divisi&oacute;n sint&eacute;tica</a></p>
+     <p><a class="menu" href="pag2C.html">Ejemplo con t&eacute;rmino faltante</a></p>
+     <p><a class="menu" href="pag3C.html">Divisi&oacute;n sint&eacute;tica con divisor x+3</a></p>
+     <p><a class="menu" href="pag4C.html">Divisi&oacute;n sint&eacute;tica para encontrar ra&iacute;ces</a></p>
+     <p><a class="menu" href="formulario.html">Formulario</a></p>
+  </div>
+</div>
+    <img class="logoc" src="image.png" width="45px"></li>
+  </ul>
+</div>
+<a name="ARRIBA"></a>
+
+<div class="cc">
+    <h1>Explicaci&oacute;n del residuo y cociente</h1>
+    <br>
+    <div class="cuadro">
+      <p>En la divisi&oacute;n sint&eacute;tica, el resultado que se obtiene se divide en dos partes:</p>
+     <h3> 1. El Cociente</h3>
+<p>Es el polinomio que se forma a partir del resultado de la divisi&oacute;n. Su grado ser&aacute; uno menos que el polinomio original. </p>
+<div class="ta"> 
+<h3>Por ejemplo:</h3>  
+<p>Si el polinomio original es de grado 3, el cociente ser&aacute; de grado 2.<br>
+El cociente representa cu&aacute;ntas veces cabe el divisor en el polinomio original.</p></div>
+
+<h3>2. El Residuo</h3>
+
+<p>Es el n&uacute;mero que sobra despu&eacute;s de realizar todos los pasos. Si es 0, significa que el divisor divide exactamente al polinomio.</p>
+
+<h3>Importancia del residuo:</h3>
+<ul>
+<li> Un residuo distinto de cero indica que la divisi&oacute;n no es exacta.</li>
+<li>Este residuo se puede representar como una fracci&oacute;n algebraica:</li>
+  <div class="ejemplo">
+  <p><b>Resultado final = Cociente + (Residuo / Divisor)</b></p>
+</div>
+    </div>
+
+    <div class="cuadro">
+      <h2>Ejemplo completo</h2>
+     <p> Polinomio: x<sup>2</sup> - 7x + 10 <br> 
+         Divisor: (x - 2) <br> 
+Coeficientes: 1, -7, 10 <br> 
+N&uacute;mero del divisor: 2</p>
+<div class="ta">
+<h3>Divisi&oacute;n sint&eacute;tica:</h3>
+<img src="ejemplo2.jpg" height=140 width=200>
+<p>Cociente: x - 5<br>  
+Residuo: 0<br>
+Como el residuo es 0, el resultado es exacto: x - 5</p>
+
+    </div>
+  </div>
+</div>
+<div class="pp">
+<div class="presentacion">
+<h3><a class="downb" href="#ARRIBA">&nbsp;&nbsp;&nbsp;&nbsp;IR ARRIBA&nbsp;&nbsp;&nbsp;&nbsp;</a></h3>
+</div>
+<div class="presentacion">
+<h2 style="margin-left:56px;margin-top:-25px;">Desarrollado por:</h2>
+<p style="font-size:18px;margin-left:43px;">Adriana Nicole Rivas Aguilar</p>
+</div>
+<b><p style=";margin-bottom:20px;margin-top:-5px;margin-left:555px">&copy; 2025 Proyecto de m&oacute;dulo</b></p>
+</div>
+</body>
+</html>

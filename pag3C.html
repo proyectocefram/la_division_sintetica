@@ -1,0 +1,358 @@
+<html lang="es">
+<head>
+<title>pagina 3</title>
+<link rel="icon" href="logopestaña.ico">
+<style>
+  body {
+    font-family:"times new roman", sans-serif;
+    background-image:url(v915-wit-011-k.jpeg);/* Imagen de fondo */
+    padding: 0px;
+    margin:58.4px 0px 0px 0px;
+    background-attachment: fixed;/*hace que el fondo se quede fijo mientras el contenido se desplaza.*/
+    background-size: cover;/*ajusta la imagen para que cubra todo el fondo, adaptándose al tamaño de la pantalla.*/
+  }
+  h1, h2 {
+    color: #1a237e;
+  }
+  .cuadro {
+    border: 2px solid #3949ab;
+    background: #e8eaf6;
+    padding: 25px;
+    margin: 0px 40px 25px 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #436DA8;
+  }
+  pre {
+    background: #c5cae9 ;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: monospace;
+  }
+  marquee {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #3949ab;
+    padding: 10px;
+    border-radius: 8px;
+    margin:100px 40px 0px 40px;
+  }
+  a.lnk {
+    color: #6a1b9a;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a.lnk:hover {
+    text-decoration: underline;
+  }
+/* Estilos para la barra superior */
+div.fond {
+        background-color:#0F2027;/* Color de fondo de barra */
+        width:100%;
+        height:57.5px;
+        color:white;
+        position: fixed;
+        top: 0;/* Posiciona la barra en la parte superior */
+        z-index: 10; /* Posiciona el fondo por encima de todo */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+    ul.navb {
+      list-style-type:none;
+         margin: 0;
+         padding: 0;
+}
+/* Estilos para el logo de la barra*/
+    img.logoc {
+        transition: transform 0.2s;
+        margin:6.8px 150px 0px 40px;
+        float:right;
+        z-index: 12;
+}
+      img.logoc:hover {
+        transition: 0.2s;
+        transform:scale(1.125);
+}
+/* Estilos para boton de index */
+      a.first {
+        border:2px solid white;
+        border-radius:26px;
+        padding:7px 20px;
+        float:left;
+        margin:8.5px 85px 0px 123px;
+        display:inline;
+        transition: 0.2s;
+        font-size:18px;
+        letter-spacing:1;
+        font-family:"montserrat", sans-serif;
+}
+/* Animacion para boton index */
+      a.first:hover {
+        transform:scale(1.070);
+        color:#5D8FD0;
+}
+/* Estilos para botones centrales */
+      li.button {
+        display:inline-block;
+        margin:17.5px 44px 0px 44px;
+        transition: 0.2s;
+        font-size:18px;
+        letter-spacing:1px;
+        font-family:"montserrat", sans-serif;
+}
+/* Animacion para botones centrales */
+      li.button:hover {
+        transform:scale(1.070);
+        color:#5D8FD0;
+}
+/* Quita decoracion de enlace a algunos botones */
+      a.nodec {
+        text-decoration:none;
+        color:white;
+        transition: 0.2s;
+}
+/* Animacion para botones sin decoracion */
+      a.nodec:hover {
+        transform:scale(1.070);
+        color:#5D8FD0;
+}
+/* Estilo para menus desplegables */
+
+  .despleg {
+    display: inline-block;
+    z-index: 11;
+}
+/* Estilos del primer contenedor */
+  .despleg-cont {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 175px;
+    margin:0px 0px 0px 10px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont {
+    display: block;
+}
+/* Estilos del segundo contenedor */
+  .despleg-cont2 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 210px;
+    margin:0px 0px 0px 22px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont2 {
+    display: block;
+}
+/* Estilos del tercer contenedor */
+  .despleg-cont3 {
+    display: none;
+    position: absolute;
+    background-color: #0F2027;;
+    width: 200px;
+    margin:0px 0px 0px 21px;
+    padding:10px 0px 8px 0px;
+    z-index: 10;
+    text-align: center;
+}
+  .despleg:hover .despleg-cont3 {
+    display: block;
+}
+/* Estilos para enlaces del menu */
+  a.menu {
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    line-height:1.75;
+    font-weight:normal;
+    font-family:"montserrat", sans-serif;
+}
+/* Cambio de color para enlaces de menu */
+  a.menu:hover {
+    color:#5D8FD0;
+}
+  .pp {
+      background: #031926;
+      color:white;
+      padding:12px;
+      border-radius:8px;
+      margin-top:70px;
+      font-family:"montserrat", sans-serif;
+}
+    .presentacion {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      height: 40px;
+      margin: 30px 50px 30px 50px;
+      text-align: left;
+}
+    .presentacion h3 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion h2 {
+      color: teal;
+      margin: 3px 160px 3px 8px;
+      margin-bottom: 15px;
+}
+    .presentacion b {
+      color: #333;
+}
+    a.downb:link, a.downb:visited { 
+      background-color: #468189; 
+      color: white; 
+      padding: 14px 25px; 
+      text-align: center; 
+      text-decoration: none; 
+      display: inline-block;
+} 
+    a.downb:hover, a.downb:active { 
+      background-color: #031926; 
+}
+.cuadro:hover {
+  transition: transform 0.3s; 
+  transform: scale(1.05); 
+
+</style>
+</head>
+<body>
+<a name="ARRIBA">
+<div class="fond">
+  <ul class="navb">
+    <li><a class="nodec first" href="index.html">Principal</a></li>
+<div class="despleg">
+    <li class="button"><a class="nodec" href="">Conceptos</a></li>
+  <div class="despleg-cont">
+    <p><a class="menu" href="pag1.html">&iquest;Qu&eacute; es?</a></p>
+    <p><a class="menu" href="pag2.html">&iquest;Para qu&eacute; se usa?</a></p>
+    <p><a class="menu" href="pag3.html">Requisitos</a></p>
+    <p><a class="menu" href="pag4.html">Pasos B&aacute;sicos</a></p>
+  </div>
+</div>
+<div class="despleg">
+    <li class="button"><a class="nodec" href="">Casos Especiales</a></li>
+  <div class="despleg-cont2">
+    <p><a class="menu" href="pag1A.html">&iquest;Qu&eacute; hacer si el divisor es negativo?</a></p>
+    <p><a class="menu" href="pag2A.html">Problemas frecuentes</a></p>
+    <p><a class="menu" href="pag3A.html">Ejemplo simple</a></p>
+    <p><a class="menu" href="pag4A.html">Explicación del residuo y cociente</a></p>
+  </div>
+</div>
+<div class="despleg">
+    <li class="button"><a class="nodec" href="">Pr&aacute;ctica y Cierre</a></li>
+  <div class="despleg-cont3">
+     <p><a class="menu" href="pag1C.html">Ejemplo de divisi&oacute;n sint&eacute;tica</a></p>
+     <p><a class="menu" href="pag2C.html">Ejemplo con t&eacute;rmino faltante</a></p>
+     <p><a class="menu" href="pag3C.html">Divisi&oacute;n sint&eacute;tica con divisor x+3</a></p>
+     <p><a class="menu" href="pag4C.html">Divisi&oacute;n sint&eacute;tica para encontrar ra&iacute;ces</a></p>
+     <p><a class="menu" href="formulario.html">Formulario</a></p>
+  </div>
+</div>
+    <img class="logoc" src="image.png" width="45px"></li>
+  </ul>
+</div>
+<marquee behavior="alternate" scrollamount="6">Ejemplo 3: División Sintética con divisor x + 3 (a = -3)</marquee>
+
+<div class="cuadro">
+  <h2>Problema</h2>
+<p>Dividir el polinomio <strong>2x⁴ - 3x³ + x² - 5x + 6</strong> entre el binomio <strong>x + 3</strong> usando división sintética.</p>
+</div>
+
+<div class="cuadro">
+  <h2>Identificar el valor de a</h2>
+  <p>Para divisores de la forma <strong>x + a</strong>, el valor que usamos en la división sintética es <strong>-a</strong>.</p>
+  <p>Como el divisor es <strong>x + 3</strong>, entonces:</p>
+  <p><strong>a = -3</strong></p>
+</div>
+
+<div class="cuadro">
+  <h2>Coeficientes del polinomio</h2>
+  <p>Escribe los coeficientes del polinomio en orden descendente:</p>
+  <ul>
+    <li>2 (x⁴)</li>
+    <li>-3 (x³)</li>
+    <li>1 (x²)</li>
+    <li>-5 (x¹)</li>
+    <li>6 (término independiente)</li>
+  </ul>
+</div>
+
+<div class="cuadro">
+  <h2>Montar la tabla de división sintética</h2>
+  <pre>
+       __________________
+-3 |  2   -3    1    -5    6
+  </pre>
+</div>
+
+<div class="cuadro">
+  <h2>Paso a paso</h2>
+  <ol>
+    <li>Baja el primer coeficiente: <strong>2</strong>.</li>
+    <li>Multiplica 2 × (-3) = -6. Escríbelo debajo del segundo coeficiente.</li>
+    <li>Suma -3 + (-6) = -9.</li>
+    <li>Multiplica -9 × (-3) = 27. Escríbelo debajo del tercer coeficiente.</li>
+    <li>Suma 1 + 27 = 28.</li>
+    <li>Multiplica 28 × (-3) = -84. Escríbelo debajo del cuarto coeficiente.</li>
+    <li>Suma -5 + (-84) = -89.</li>
+    <li>Multiplica -89 × (-3) = 267. Escríbelo debajo del quinto coeficiente.</li>
+    <li>Suma 6 + 267 = 273.</li>
+  </ol>
+  <pre>
+       __________________
+-3 |  2   -3    1    -5    6
+       -6  -27   84  -267
+     --------------------------
+       2  -9   28  -89  273
+  </pre>
+</div>
+
+<div class="cuadro">
+  <h2>Interpretación de resultados</h2>
+  <p>Los números en la última fila (2, -9, 28, -89) son los coeficientes del cociente.</p>
+  <p>El último número (273) es el residuo.</p>
+  <p>Entonces, el cociente es: <strong>2x³ - 9x² + 28x - 89</strong></p>
+  <p>Y el residuo es: <strong>273</strong></p>
+</div>
+
+<div class="cuadro">
+  <h2>Resultado final</h2>
+  <p>Por lo tanto, la división queda expresada así:</p>
+  <p><strong>2x⁴ - 3x³ + x² - 5x + 6 = (x + 3)(2x³ - 9x² + 28x - 89) + 273</strong></p>
+</div>
+
+<div class="cuadro">
+  <h2>Notas importantes</h2>
+  <ul>
+    <li>Recuerda cambiar el signo de a al hacer la división sintética cuando el divisor sea <code>x + a</code>.</li>
+    <li>El residuo puede usarse para verificar el resultado o para resolver ecuaciones.</li>
+    <li>Si el residuo fuera cero, significaría que el divisor es un factor exacto del polinomio.</li>
+  </ul>
+</div>
+
+<div class="cuadro">
+  <h2>Ejercicio adicional</h2>
+  <p>Realiza la división sintética del polinomio <strong>4x³ - 7x² + 2x - 9</strong> entre el divisor <strong>x + 2</strong>. Recuerda aplicar el cambio de signo para <code>a</code>.</p>
+</div>
+
+<div class="pp">
+<div class="presentacion">
+<h3><a class="downb" href="#ARRIBA">&nbsp;&nbsp;&nbsp;&nbsp;IR ARRIBA&nbsp;&nbsp;&nbsp;&nbsp;</a></h3>
+</div>
+<div class="presentacion">
+<h2 style="margin-left:56px;margin-top:-25px;">Desarrollado por:</h2>
+<p style="font-size:18px;margin-left:7px;">Gabriela Catalina Ascencio Leonardo</p>
+</div>
+<b><p style=";margin-bottom:20px;margin-top:-5px;margin-left:555px">&copy; 2025 Proyecto de m&oacute;dulo</b></p>
+</div>
+
+</body>
+</html>
